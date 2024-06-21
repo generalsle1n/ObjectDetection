@@ -45,14 +45,13 @@ namespace ObjectDetection
         private async Task<ImageSource> ConvertMatToImage(Mat Matrix)
         {
             //Convert Matrix into Source FileType
-            byte[] ResultData = CvInvoke.Imencode($".{(Result.ContentType.Split(_splitContentType))[1]}", Matrix);
+            byte[] ResultData = CvInvoke.Imencode($".png", Matrix);
             //Create Memory Stream for ImageSource
             MemoryStream MemoryStream = new MemoryStream(ResultData);
             //Create the Source to be loadable into Maui
             ImageSource Source = ImageSource.FromStream(() => MemoryStream);
-            //Load the source
-            ImageBox.Source = Source;
            
+            return Source;
         }
 
         private async Task<Mat> DetectCascade(Mat Matrix)
