@@ -32,7 +32,9 @@ namespace ObjectDetection
             //File Dialog
             FileResult Result = await FilePicker.PickAsync(_pickOptions);
             //ReadFile into Matrix
-            Mat Matrix = CvInvoke.Imread(Result.FullPath, Emgu.CV.CvEnum.ImreadModes.Color);
+            Mat Matrix = CvInvoke.Imread(Result.FullPath, ImreadModes.Color);
+            
+            Matrix = await DetectCascade(Matrix);
             //Convert Matrix into Source FileType
             byte[] ResultData = CvInvoke.Imencode($".{(Result.ContentType.Split(_splitContentType))[1]}", Matrix);
             //Create Memory Stream for ImageSource
