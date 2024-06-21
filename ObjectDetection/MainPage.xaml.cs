@@ -2,7 +2,6 @@
 using Emgu.CV.CvEnum;
 using Emgu.CV.Structure;
 using System.Drawing;
-using System.Linq;
 using System.Reflection;
 using System.Text;
 using Point = System.Drawing.Point;
@@ -38,8 +37,13 @@ namespace ObjectDetection
             FileResult Result = await FilePicker.PickAsync(_pickOptions);
             //ReadFile into Matrix
             Mat Matrix = CvInvoke.Imread(Result.FullPath, ImreadModes.Color);
-            
+            //Try to Detect
             Matrix = await DetectCascade(Matrix);
+            //Load the source
+            ImageBox.Source = await ConvertMatToImage(Matrix);
+        }
+        private async Task<ImageSource> ConvertMatToImage(Mat Matrix)
+        {
             //Convert Matrix into Source FileType
             byte[] ResultData = CvInvoke.Imencode($".{(Result.ContentType.Split(_splitContentType))[1]}", Matrix);
             //Create Memory Stream for ImageSource
