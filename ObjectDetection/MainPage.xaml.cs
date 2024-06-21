@@ -83,10 +83,22 @@ namespace ObjectDetection
             if (Event.Value == true)
             {
                 LoadImageButton.IsEnabled = false;
+                await CaptureVideo();
             }
             else if (Event.Value == false)
             {
                 LoadImageButton.IsEnabled = true;
+            }
+        }
+        private async Task CaptureVideo()
+        {
+            using (VideoCapture Capture = new VideoCapture(1))
+            {
+                while (true)
+                {
+                    Mat Picture = Capture.QueryFrame();
+                    ImageBox.Source = await ConvertMatToImage(Picture);
+                }
             }
         }
         private async void OnSelectChangeAsync(object sender, EventArgs e)
