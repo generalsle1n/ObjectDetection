@@ -57,6 +57,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Cascade\Body\fullbody.xml" />
+	  <None Remove="Resources\Cascade\CatFace\frontalcatface.xml" />
+	  <None Remove="Resources\Cascade\Eye\eye.xml" />
 	  <None Remove="Resources\Cascade\frontface.xml" />
 	</ItemGroup>
 
@@ -69,6 +72,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <EmbeddedResource Include="Resources\Cascade\Body\fullbody.xml" />
+	  <EmbeddedResource Include="Resources\Cascade\CatFace\frontalcatface.xml" />
+	  <EmbeddedResource Include="Resources\Cascade\Eye\eye.xml" />
 	  <EmbeddedResource Include="Resources\Cascade\Face\frontface.xml" />
 	</ItemGroup>
 
