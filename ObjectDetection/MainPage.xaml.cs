@@ -43,6 +43,30 @@ namespace ObjectDetection
             ImageBox.Source = Source;
            
         }
+
+        private async Task<Mat> DetectCascade(Mat Matrix)
+        {
+            Mat GreyMat = new Mat();
+            CvInvoke.CvtColor(Matrix, GreyMat, ColorConversion.Bgr2Gray);
+            foreach (CascadeClassifier Classifier in _classifiers)
+            {
+                Rectangle[] Search = Classifier.DetectMultiScale(GreyMat);
+                if(Search.Length != 0)
+                {
+                    Matrix = await DrawRectangle(Matrix, Search);
+                }
+            }
+            return Matrix;
+        }
+        private async Task<Mat> DrawRectangle(Mat Matrix, Rectangle[] Rectangle)
+        {
+            foreach(Rectangle Single in Rectangle)
+            {
+                CvInvoke.Rectangle(Matrix, Single, new MCvScalar());
+            }
+            return Matrix;
+        }
+
         private async void OnToggleAsync(object sender, EventArgs e)
         {
             ToggledEventArgs Event = (ToggledEventArgs)e;
