@@ -17,6 +17,13 @@ namespace ObjectDetection
         public MainPage()
         {
             InitializeComponent();
+            Array Values = Enum.GetValues(typeof(DetectionType));
+            foreach (DetectionType Type in Values)
+            {
+                TypePicker.Items.Add(Enum.GetName(Type.GetType(), Type));
+        }
+
+            TypePicker.SelectedIndex = 0;
         }
 
         private async void OnLoadClickAsync(object sender, EventArgs e)
