@@ -13,6 +13,7 @@ namespace ObjectDetection
         };
 
         private const string _splitContentType = "/";
+        private List<CascadeClassifier> _classifiers = new List<CascadeClassifier>();
 
         public MainPage()
         {
@@ -56,7 +57,32 @@ namespace ObjectDetection
         }
         private async void OnSelectChangeAsync(object sender, EventArgs e)
         {
+            _classifiers.ForEach(item => item.Dispose());
+            _classifiers.Clear();
+
+            Assembly Assembly = Assembly.GetExecutingAssembly();
+            string[] ResouceName = Assembly.GetManifestResourceNames();
+
+            Picker Picker = (Picker)sender;
+            string[] AllCascades = ResouceName.Where(i => i.Contains((string)Picker.SelectedItem)).ToArray();
+
+            foreach (string Cascades in AllCascades)
+            {
+                using (Stream MemoryStream = Assembly.GetManifestResourceStream(Cascades))
+                {
+                    byte[] Data = new byte[MemoryStream.Length];
+                    await MemoryStream.ReadAsync(Data);
+                    string EncodedData = Encoding.UTF8.GetString(Data);
+
+                    FileStorage Storage = new FileStorage(EncodedData, FileStorage.Mode.Memory);
+                    FileNode Node = Storage.GetFirstTopLevelNode();
+
+                    CascadeClassifier Classifier = new CascadeClassifier();
+                    Classifier.Read(Node);
             
+                    _classifiers.Add(Classifier);
+                }
+            }
         }
     }
 
