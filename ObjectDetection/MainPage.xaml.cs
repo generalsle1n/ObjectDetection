@@ -1,6 +1,11 @@
 ﻿using Emgu.CV;
 using Emgu.CV.CvEnum;
 using Emgu.CV.Structure;
+using System.Drawing;
+using System.Linq;
+using System.Reflection;
+using System.Text;
+using Point = System.Drawing.Point;
 
 namespace ObjectDetection
 {
