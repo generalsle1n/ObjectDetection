@@ -1,6 +1,7 @@
 ﻿using Emgu.CV;
 using Emgu.CV.CvEnum;
 using Emgu.CV.Structure;
+using System.ComponentModel;
 using System.Drawing;
 using System.Reflection;
 using System.Text;
