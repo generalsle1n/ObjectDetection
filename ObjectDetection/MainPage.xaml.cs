@@ -42,6 +42,22 @@ namespace ObjectDetection
             ImageBox.Source = Source;
            
         }
+        private async void OnToggleAsync(object sender, EventArgs e)
+        {
+            ToggledEventArgs Event = (ToggledEventArgs)e;
+            if (Event.Value == true)
+            {
+                LoadImageButton.IsEnabled = false;
+            }
+            else if (Event.Value == false)
+            {
+                LoadImageButton.IsEnabled = true;
+            }
+        }
+        private async void OnSelectChangeAsync(object sender, EventArgs e)
+        {
+            
+        }
     }
 
 }
