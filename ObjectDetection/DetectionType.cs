@@ -8,7 +8,10 @@ namespace ObjectDetection
 {
     internal enum DetectionType
     {
-        Face,
+        HumanFace,
+        Body,
+        CatFace,
+        Eye,
         Plate
     }
 }
