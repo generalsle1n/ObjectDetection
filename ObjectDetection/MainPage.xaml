@@ -4,8 +4,16 @@
              x:Class="ObjectDetection.MainPage">
 
     <ScrollView>
-        <VerticalStackLayout Padding="30,0" Spacing="25">
-            <Button Text="Load Image" Clicked="OnLoadClickAsync"/>
+        <VerticalStackLayout Padding="10,0" Spacing="10" FlowDirection="RightToLeft">
+            <HorizontalStackLayout FlowDirection="LeftToRight" Spacing="10">
+                <Picker WidthRequest="150" VerticalOptions="Start" SelectedIndexChanged="OnSelectChangeAsync" x:Name="TypePicker"/>
+                <Button Text="Load Image" Clicked="OnLoadClickAsync" HorizontalOptions="End" WidthRequest="150" x:Name="LoadImageButton" />
+                <HorizontalStackLayout FlowDirection="LeftToRight" Spacing="25">
+                    <Label Text="Enable Liveview" VerticalOptions="Center"/>
+                    <Switch HorizontalOptions="Start" Toggled="OnToggleAsync"/>
+                </HorizontalStackLayout>
+            </HorizontalStackLayout>
+            
             <Image x:Name="ImageBox" Aspect="AspectFit"/>
         </VerticalStackLayout>
     </ScrollView>
