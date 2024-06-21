@@ -13,7 +13,7 @@
                     <Switch HorizontalOptions="Start" Toggled="OnToggleAsync"/>
                 </HorizontalStackLayout>
             </HorizontalStackLayout>
-            <Image x:Name="ImageBox" Aspect="AspectFit"/>
+            <Image x:Name="ImageBox" Aspect="Fill"/>
         </VerticalStackLayout>
     </ScrollView>
 
