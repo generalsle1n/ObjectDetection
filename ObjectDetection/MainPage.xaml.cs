@@ -38,10 +38,16 @@ namespace ObjectDetection
             FileResult Result = await FilePicker.PickAsync(_pickOptions);
             //ReadFile into Matrix
             Mat Matrix = CvInvoke.Imread(Result.FullPath, ImreadModes.Color);
+
+            if (TypeOpenCV.IsChecked)
+            {
             //Try to Detect
             Matrix = await DetectCascade(Matrix);
             //Load the source
             ImageBox.Source = await ConvertMatToImage(Matrix);
+            }else if (TypeMachineLearing.IsChecked)
+            {
+            }
         }
         private async Task<ImageSource> ConvertMatToImage(Mat Matrix)
         {
