@@ -1,0 +1,502 @@
+{
+    "name": "Plates",
+    "securityToken": "Plates Token",
+    "sourceConnection": {
+        "name": "Plate_Source",
+        "providerType": "localFileSystemProxy",
+        "providerOptions": {
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiMjFiOTY4Y2RkZWQ0N2QzYzBkOGE4NWIyODhmMGY3MzcyYTdjZDQxNTRjYmFjMmNlZWU5M2NlZDBkYjY4MGNmZDI3MTk5NTJiODg4ZjJmNzVlM2JmNGE3YTlkY2NkOGQwN2MyN2RhYTAzM2Y1NmI2YmQ0NDc5YWY5NDQzYjJiMmM0NmYzODUxNWU2OWRmYzcxZGVmNjhjM2UzOTQxZDk1MzhiMzcyYjBjMjMyMDU3ODJjNDYzYjNmNmYwMzVmNjJmMzY3YWI1N2U3NDRmMDUyZmMxMjYwMjlkY2ExMDVlM2IiLCJpdiI6IjYyMDRlOWViYTE5NjZmOTE2NDA1MjVkZGNlZjcwZmM0Y2VkZDE4MzcyZWNlZGFmMyJ9"
+        },
+        "id": "oiTExBWsv"
+    },
+    "targetConnection": {
+        "name": "Plate_Destination",
+        "providerType": "localFileSystemProxy",
+        "providerOptions": {
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiYWIwMGE5MTYwNzdmNjI0ZGE2MjJkZGE5ODllMDMzMGUxZWM3M2FlMzYxMmE5NmQwOTQxYzk1MTdhMjYyZjQzYTk0OWMwYmI2ODlhZWFhMjUxOGE0MzZjM2M4ODI2ZDVjNjk4Y2Y0YjlkZWEyOTFlMTExYTk5MmNjMmI4NDdiNTI4Yjk0ZjkwOGI1YjhjOWM4MWRhZmIyZWY1ZmQ3ODQ1ZGFhOWQyYWI0NWQwNDk2ZTJkYzYwOGZiMzVmYjM0ZmQ1MjA1NWI0YmRjNmRiMmVmY2E4NGUxNmIyMzczMzVjMTQiLCJpdiI6IjZlNTk1Yjc2NDg2NDc0NWU2MjNlZGUxNjZhYTE4MTNkNjQzYTY3ZTVhZjlmNWM2YSJ9"
+        },
+        "id": "SbLtMEnIu"
+    },
+    "videoSettings": {
+        "frameExtractionRate": 15
+    },
+    "tags": [
+        {
+            "name": "Plate",
+            "color": "#5db300"
+        }
+    ],
+    "id": "lk95fhE7l",
+    "activeLearningSettings": {
+        "autoDetect": false,
+        "predictTag": true,
+        "modelPathType": "coco"
+    },
+    "exportFormat": {
+        "providerType": "vottJson",
+        "providerOptions": {
+            "encrypted": "eyJjaXBoZXJ0ZXh0IjoiZWQ2ZTFiNTBhNTE4YjQyNjM0ZDBmZmEzZDcyYjkyYmQzZTA4ODBjZGQyMTU5ZTlkY2QwNGNkOWRmYmNhZWM1YWE4M2Y5MDNiNjg2NDU4M2Q4NzMwMWUxMmU4OWUzZTA2IiwiaXYiOiI5M2I2OGY4OTMwMzk0YmI2NDVjODU5YzNjMjYxNTViNjY3ZTA5NTc2YjU5MWMxNDQifQ=="
+        }
+    },
+    "version": "2.2.0",
+    "lastVisitedAssetId": "4e3e33b61ec25a2cb7991e3a015ba09e",
+    "assets": {
+        "e3fa74e3e3c9960bfcdfe73c8e6973f2": {
+            "format": "png",
+            "id": "e3fa74e3e3c9960bfcdfe73c8e6973f2",
+            "name": "Cars0.png",
+            "path": "file:C:/Users/Niels/source/repos/ObjectDetection/ObjectDetection/Vott/Source/Cars0.png",
+            "size": {
+                "width": 500,
+                "height": 268
+            },
+            "state": 2,
+            "type": 1,
+            "predicted": true
+        },
+        "8ffe60270d0a066fc6415610d67fd57d": {
+            "format": "png",
+            "id": "8ffe60270d0a066fc6415610d67fd57d",
+            "name": "Cars1.png",
+            "path": "file:C:/Users/Niels/source/repos/ObjectDetection/ObjectDetection/Vott/Source/Cars1.png",
+            "size": {
+                "width": 400,
+                "height": 248
+            },
+            "state": 2,
+            "type": 1
+        },
+        "89eaac10996b44dc2b3ce982ac1decc0": {
+            "format": "png",
+            "id": "89eaac10996b44dc2b3ce982ac1decc0",
+            "name": "Cars10.png",
+            "path": "file:C:/Users/Niels/source/repos/ObjectDetection/ObjectDetection/Vott/Source/Cars10.png",
+            "size": {
+                "width": 400,
+                "height": 225
+            },
+            "state": 2,
+            "type": 1
+        },
+        "8c6dcfc7ee4762456568b97577cbd2af": {
+            "format": "png",
+            "id": "8c6dcfc7ee4762456568b97577cbd2af",
+            "name": "Cars100.png",
+            "path": "file:C:/Users/Niels/source/repos/ObjectDetection/ObjectDetection/Vott/Source/Cars100.png",
+            "size": {
+                "width": 400,
+                "height": 267
+            },
+            "state": 2,
+            "type": 1
+        },
+        "d4fce68817bedaefce85ff585aa2762d": {
+            "format": "png",
+            "id": "d4fce68817bedaefce85ff585aa2762d",
+            "name": "Cars101.png",
+            "path": "file:C:/Users/Niels/source/repos/ObjectDetection/ObjectDetection/Vott/Source/Cars101.png",
+            "size": {
+                "width": 400,
+                "height": 300
+            },
+            "state": 2,
+            "type": 1
+        },
+        "040230d447e6ebb9f1a66ef656053576": {
+            "format": "png",
+            "id": "040230d447e6ebb9f1a66ef656053576",
+            "name": "Cars102.png",
+            "path": "file:C:/Users/Niels/source/repos/ObjectDetection/ObjectDetection/Vott/Source/Cars102.png",
+            "size": {
+                "width": 350,
+                "height": 263
+            },
+            "state": 2,
+            "type": 1
+        },
+        "033d2b43bc622503863adeca9623264a": {
+            "format": "png",
+            "id": "033d2b43bc622503863adeca9623264a",
+            "name": "Cars103.png",
+            "path": "file:C:/Users/Niels/source/repos/ObjectDetection/ObjectDetection/Vott/Source/Cars103.png",
+            "size": {
+                "width": 400,
+                "height": 196
+            },
+            "state": 2,
+            "type": 1
+        },
+        "178c08be2129240c27a21f74725ff4e8": {
+            "format": "png",
+            "id": "178c08be2129240c27a21f74725ff4e8",
+            "name": "Cars104.png",
+            "path": "file:C:/Users/Niels/source/repos/ObjectDetection/ObjectDetection/Vott/Source/Cars104.png",
+            "size": {
+                "width": 500,
+                "height": 374
+            },
+            "state": 2,
+            "type": 1
+        },
+        "a30a7c8655b74aa61a17074762b58709": {
+            "format": "png",
+            "id": "a30a7c8655b74aa61a17074762b58709",
+            "name": "Cars105.png",
+            "path": "file:C:/Users/Niels/source/repos/ObjectDetection/ObjectDetection/Vott/Source/Cars105.png",
+            "size": {
+                "width": 400,
+                "height": 240
+            },
+            "state": 2,
+            "type": 1
+        },
+        "8720cd2d9fb6571cd44e05350fbc0d57": {
+            "format": "png",
+            "id": "8720cd2d9fb6571cd44e05350fbc0d57",
+            "name": "Cars106.png",
+            "path": "file:C:/Users/Niels/source/repos/ObjectDetection/ObjectDetection/Vott/Source/Cars106.png",
+            "size": {
+                "width": 400,
+                "height": 247
+            },
+            "state": 2,
+            "type": 1
+        },
+        "e5c1b4aa5509452f8a99482f0d430cd3": {
+            "format": "png",
+            "id": "e5c1b4aa5509452f8a99482f0d430cd3",
+            "name": "Cars107.png",
+            "path": "file:C:/Users/Niels/source/repos/ObjectDetection/ObjectDetection/Vott/Source/Cars107.png",
+            "size": {
+                "width": 471,
+                "height": 270
+            },
+            "state": 1,
+            "type": 1
+        },
+        "062ae4a0ec8582741890736fb853fa3b": {
+            "format": "png",
+            "id": "062ae4a0ec8582741890736fb853fa3b",
+            "name": "Cars108.png",
+            "path": "file:C:/Users/Niels/source/repos/ObjectDetection/ObjectDetection/Vott/Source/Cars108.png",
+            "size": {
+                "width": 442,
+                "height": 333
+            },
+            "state": 2,
+            "type": 1
+        },
+        "ff1010ee6beb19d263a924dce97d9f01": {
+            "format": "png",
+            "id": "ff1010ee6beb19d263a924dce97d9f01",
+            "name": "Cars109.png",
+            "path": "file:C:/Users/Niels/source/repos/ObjectDetection/ObjectDetection/Vott/Source/Cars109.png",
+            "size": {
+                "width": 400,
+                "height": 267
+            },
+            "state": 2,
+            "type": 1
+        },
+        "eea2effa78e7347df2912ef18cba2e9a": {
+            "format": "png",
+            "id": "eea2effa78e7347df2912ef18cba2e9a",
+            "name": "Cars11.png",
+            "path": "file:C:/Users/Niels/source/repos/ObjectDetection/ObjectDetection/Vott/Source/Cars11.png",
+            "size": {
+                "width": 400,
+                "height": 305
+            },
+            "state": 2,
+            "type": 1
+        },
+        "2019afa92f732c59e5d60c52d740c0a6": {
+            "format": "png",
+            "id": "2019afa92f732c59e5d60c52d740c0a6",
+            "name": "Cars110.png",
+            "path": "file:C:/Users/Niels/source/repos/ObjectDetection/ObjectDetection/Vott/Source/Cars110.png",
+            "size": {
+                "width": 400,
+                "height": 267
+            },
+            "state": 2,
+            "type": 1
+        },
+        "9a5ba4c85d91ae5dee46538e0b23c3fa": {
+            "format": "png",
+            "id": "9a5ba4c85d91ae5dee46538e0b23c3fa",
+            "name": "Cars111.png",
+            "path": "file:C:/Users/Niels/source/repos/ObjectDetection/ObjectDetection/Vott/Source/Cars111.png",
+            "size": {
+                "width": 600,
+                "height": 338
+            },
+            "state": 2,
+            "type": 1
+        },
+        "f1af6b4ba6e4cb45a5d3debd76c3b730": {
+            "format": "png",
+            "id": "f1af6b4ba6e4cb45a5d3debd76c3b730",
+            "name": "Cars112.png",
+            "path": "file:C:/Users/Niels/source/repos/ObjectDetection/ObjectDetection/Vott/Source/Cars112.png",
+            "size": {
+                "width": 240,
+                "height": 400
+            },
+            "state": 2,
+            "type": 1
+        },
+        "b8a939732b64e2e5d17f11d412fd58f9": {
+            "format": "png",
+            "id": "b8a939732b64e2e5d17f11d412fd58f9",
+            "name": "Cars113.png",
+            "path": "file:C:/Users/Niels/source/repos/ObjectDetection/ObjectDetection/Vott/Source/Cars113.png",
+            "size": {
+                "width": 400,
+                "height": 300
+            },
+            "state": 2,
+            "type": 1
+        },
+        "22947c441860d0a349c9249f0dad40b5": {
+            "format": "png",
+            "id": "22947c441860d0a349c9249f0dad40b5",
+            "name": "Cars114.png",
+            "path": "file:C:/Users/Niels/source/repos/ObjectDetection/ObjectDetection/Vott/Source/Cars114.png",
+            "size": {
+                "width": 500,
+                "height": 300
+            },
+            "state": 1,
+            "type": 1
+        },
+        "d5816247cfa9742013b486607b895afd": {
+            "format": "png",
+            "id": "d5816247cfa9742013b486607b895afd",
+            "name": "Cars115.png",
+            "path": "file:C:/Users/Niels/source/repos/ObjectDetection/ObjectDetection/Vott/Source/Cars115.png",
+            "size": {
+                "width": 507,
+                "height": 388
+            },
+            "state": 2,
+            "type": 1
+        },
+        "3926d3382783c3e0874647d4c1482fb4": {
+            "format": "png",
+            "id": "3926d3382783c3e0874647d4c1482fb4",
+            "name": "Cars116.png",
+            "path": "file:C:/Users/Niels/source/repos/ObjectDetection/ObjectDetection/Vott/Source/Cars116.png",
+            "size": {
+                "width": 400,
+                "height": 332
+            },
+            "state": 2,
+            "type": 1
+        },
+        "7c8aa6473150950965c42e5164046532": {
+            "format": "png",
+            "id": "7c8aa6473150950965c42e5164046532",
+            "name": "Cars117.png",
+            "path": "file:C:/Users/Niels/source/repos/ObjectDetection/ObjectDetection/Vott/Source/Cars117.png",
+            "size": {
+                "width": 400,
+                "height": 185
+            },
+            "state": 2,
+            "type": 1
+        },
+        "f7ddcaf1b17f9d18081ed6ab0a21d0e5": {
+            "format": "png",
+            "id": "f7ddcaf1b17f9d18081ed6ab0a21d0e5",
+            "name": "Cars118.png",
+            "path": "file:C:/Users/Niels/source/repos/ObjectDetection/ObjectDetection/Vott/Source/Cars118.png",
+            "size": {
+                "width": 600,
+                "height": 375
+            },
+            "state": 1,
+            "type": 1
+        },
+        "ef96527d546217ee5bb09876eb7519f0": {
+            "format": "png",
+            "id": "ef96527d546217ee5bb09876eb7519f0",
+            "name": "Cars119.png",
+            "path": "file:C:/Users/Niels/source/repos/ObjectDetection/ObjectDetection/Vott/Source/Cars119.png",
+            "size": {
+                "width": 400,
+                "height": 247
+            },
+            "state": 2,
+            "type": 1
+        },
+        "03ea86703e20248d26390b0152336db5": {
+            "format": "png",
+            "id": "03ea86703e20248d26390b0152336db5",
+            "name": "Cars12.png",
+            "path": "file:C:/Users/Niels/source/repos/ObjectDetection/ObjectDetection/Vott/Source/Cars12.png",
+            "size": {
+                "width": 400,
+                "height": 141
+            },
+            "state": 2,
+            "type": 1
+        },
+        "2a0e57c2d7829a8f0cdf6fe9eb4f83f5": {
+            "format": "png",
+            "id": "2a0e57c2d7829a8f0cdf6fe9eb4f83f5",
+            "name": "Cars120.png",
+            "path": "file:C:/Users/Niels/source/repos/ObjectDetection/ObjectDetection/Vott/Source/Cars120.png",
+            "size": {
+                "width": 400,
+                "height": 265
+            },
+            "state": 2,
+            "type": 1
+        },
+        "714b5f2217d0ac2e2c46e3915ae6929f": {
+            "format": "png",
+            "id": "714b5f2217d0ac2e2c46e3915ae6929f",
+            "name": "Cars121.png",
+            "path": "file:C:/Users/Niels/source/repos/ObjectDetection/ObjectDetection/Vott/Source/Cars121.png",
+            "size": {
+                "width": 400,
+                "height": 300
+            },
+            "state": 2,
+            "type": 1
+        },
+        "c5b4beaacdad12f26c17ee50e442674a": {
+            "format": "png",
+            "id": "c5b4beaacdad12f26c17ee50e442674a",
+            "name": "Cars122.png",
+            "path": "file:C:/Users/Niels/source/repos/ObjectDetection/ObjectDetection/Vott/Source/Cars122.png",
+            "size": {
+                "width": 400,
+                "height": 300
+            },
+            "state": 2,
+            "type": 1
+        },
+        "4c6a1feb527e94b1b9b5ebbce78c82b4": {
+            "format": "png",
+            "id": "4c6a1feb527e94b1b9b5ebbce78c82b4",
+            "name": "Cars123.png",
+            "path": "file:C:/Users/Niels/source/repos/ObjectDetection/ObjectDetection/Vott/Source/Cars123.png",
+            "size": {
+                "width": 400,
+                "height": 300
+            },
+            "state": 2,
+            "type": 1
+        },
+        "9d56ad31e1b716a280e99ccb7efc1be2": {
+            "format": "png",
+            "id": "9d56ad31e1b716a280e99ccb7efc1be2",
+            "name": "Cars124.png",
+            "path": "file:C:/Users/Niels/source/repos/ObjectDetection/ObjectDetection/Vott/Source/Cars124.png",
+            "size": {
+                "width": 400,
+                "height": 267
+            },
+            "state": 2,
+            "type": 1
+        },
+        "ee17aa72af023a97e67efe40595d8dc5": {
+            "format": "png",
+            "id": "ee17aa72af023a97e67efe40595d8dc5",
+            "name": "Cars125.png",
+            "path": "file:C:/Users/Niels/source/repos/ObjectDetection/ObjectDetection/Vott/Source/Cars125.png",
+            "size": {
+                "width": 400,
+                "height": 260
+            },
+            "state": 2,
+            "type": 1
+        },
+        "323d324b4032ce7470be2ecd112aec94": {
+            "format": "png",
+            "id": "323d324b4032ce7470be2ecd112aec94",
+            "name": "Cars126.png",
+            "path": "file:C:/Users/Niels/source/repos/ObjectDetection/ObjectDetection/Vott/Source/Cars126.png",
+            "size": {
+                "width": 400,
+                "height": 300
+            },
+            "state": 2,
+            "type": 1
+        },
+        "6025e377585019338494f95f0f5452b8": {
+            "format": "png",
+            "id": "6025e377585019338494f95f0f5452b8",
+            "name": "Cars127.png",
+            "path": "file:C:/Users/Niels/source/repos/ObjectDetection/ObjectDetection/Vott/Source/Cars127.png",
+            "size": {
+                "width": 400,
+                "height": 267
+            },
+            "state": 2,
+            "type": 1
+        },
+        "43c14faa8f4f6cff63f76bb444d2782a": {
+            "format": "png",
+            "id": "43c14faa8f4f6cff63f76bb444d2782a",
+            "name": "Cars128.png",
+            "path": "file:C:/Users/Niels/source/repos/ObjectDetection/ObjectDetection/Vott/Source/Cars128.png",
+            "size": {
+                "width": 400,
+                "height": 225
+            },
+            "state": 2,
+            "type": 1
+        },
+        "e2fc6574f54a57ccdee8fd0e4ebd8fb5": {
+            "format": "png",
+            "id": "e2fc6574f54a57ccdee8fd0e4ebd8fb5",
+            "name": "Cars129.png",
+            "path": "file:C:/Users/Niels/source/repos/ObjectDetection/ObjectDetection/Vott/Source/Cars129.png",
+            "size": {
+                "width": 530,
+                "height": 398
+            },
+            "state": 2,
+            "type": 1
+        },
+        "e50bd948e0283da0953df5450602e50b": {
+            "format": "png",
+            "id": "e50bd948e0283da0953df5450602e50b",
+            "name": "Cars13.png",
+            "path": "file:C:/Users/Niels/source/repos/ObjectDetection/ObjectDetection/Vott/Source/Cars13.png",
+            "size": {
+                "width": 400,
+                "height": 268
+            },
+            "state": 2,
+            "type": 1
+        },
+        "c0c455a7f68ac54404b3a84ea38d6cef": {
+            "format": "png",
+            "id": "c0c455a7f68ac54404b3a84ea38d6cef",
+            "name": "Cars130.png",
+            "path": "file:C:/Users/Niels/source/repos/ObjectDetection/ObjectDetection/Vott/Source/Cars130.png",
+            "size": {
+                "width": 400,
+                "height": 267
+            },
+            "state": 2,
+            "type": 1
+        },
+        "4e3e33b61ec25a2cb7991e3a015ba09e": {
+            "format": "png",
+            "id": "4e3e33b61ec25a2cb7991e3a015ba09e",
+            "name": "Cars132.png",
+            "path": "file:C:/Users/Niels/source/repos/ObjectDetection/ObjectDetection/Vott/Source/Cars132.png",
+            "size": {
+                "width": 400,
+                "height": 225
+            },
+            "state": 2,
+            "type": 1
+        }
+    }
+}

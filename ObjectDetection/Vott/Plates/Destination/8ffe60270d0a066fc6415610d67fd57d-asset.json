@@ -1,0 +1,48 @@
+{
+    "asset": {
+        "format": "png",
+        "id": "8ffe60270d0a066fc6415610d67fd57d",
+        "name": "Cars1.png",
+        "path": "file:C:/Users/Niels/source/repos/ObjectDetection/ObjectDetection/Vott/Source/Cars1.png",
+        "size": {
+            "width": 400,
+            "height": 248
+        },
+        "state": 2,
+        "type": 1
+    },
+    "regions": [
+        {
+            "id": "Txxj1JKn8",
+            "type": "RECTANGLE",
+            "tags": [
+                "Plate"
+            ],
+            "boundingBox": {
+                "height": 28.925110955361582,
+                "width": 125.93504956265413,
+                "left": 133.00453120183414,
+                "top": 125.2736999633061
+            },
+            "points": [
+                {
+                    "x": 133.00453120183414,
+                    "y": 125.2736999633061
+                },
+                {
+                    "x": 258.93958076448826,
+                    "y": 125.2736999633061
+                },
+                {
+                    "x": 258.93958076448826,
+                    "y": 154.19881091866768
+                },
+                {
+                    "x": 133.00453120183414,
+                    "y": 154.19881091866768
+                }
+            ]
+        }
+    ],
+    "version": "2.2.0"
+}
