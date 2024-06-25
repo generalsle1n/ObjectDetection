@@ -12,6 +12,12 @@
                     <Label Text="Enable Liveview" VerticalOptions="Center"/>
                     <Switch HorizontalOptions="Start" Toggled="OnToggleAsync"/>
                 </HorizontalStackLayout>
+                <HorizontalStackLayout>
+                    <Label Text="OpenCV" VerticalOptions="Center"/>
+                    <RadioButton GroupName="Type" VerticalOptions="Center" IsChecked="True" x:Name="TypeOpenCV"/>
+                    <Label Text="Machine Learning" VerticalOptions="Center"/>
+                    <RadioButton GroupName="Type" VerticalOptions="Center" x:Name="TypeMachineLearing"/>
+                </HorizontalStackLayout>
             </HorizontalStackLayout>
             <Image x:Name="ImageBox" Aspect="Fill"/>
         </VerticalStackLayout>
